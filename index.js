@@ -6,8 +6,10 @@ async function devApp(options) {
   await app.process();
   return app.dev();
 };
+//    "docs:build": "vuepress build docs",		
 
 devApp({
 	sourceDir: process.cwd() + '/docs',
-	theme: 'vuepress-theme-simple',
+	theme: '@vuepress/theme-default',
 });
+// https://asadhum2005.github.io/docs/.
